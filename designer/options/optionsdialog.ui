@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OptionsDialog</class>
+ <widget class="QWidget" name="OptionsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>482</width>
+    <height>391</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QLineEdit" name="find">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="placeholderText">
+        <string>Filter</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="list">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>160</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>160</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="viewMode">
+        <enum>QListView::ListMode</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>Layers</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Elements</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Label</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QStackedWidget" name="stacked">
+       <widget class="QWidget" name="layer_page">
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QScrollArea" name="scrollArea">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>240</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>240</height>
+            </size>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>-98</y>
+              <width>283</width>
+              <height>683</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QGroupBox" name="layer_group">
+               <property name="title">
+                <string>Layers</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <item>
+                   <widget class="QLabel" name="label_2">
+                    <property name="text">
+                     <string>Top Offset</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="layer_top"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <item>
+                   <widget class="QLabel" name="label_3">
+                    <property name="text">
+                     <string>Bottom Offset</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="layer_bottom"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <widget class="QLabel" name="label_4">
+                    <property name="text">
+                     <string>Left Offset</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="layer_left"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_5">
+                  <item>
+                   <widget class="QLabel" name="label_5">
+                    <property name="text">
+                     <string>Right Offset</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="layer_right"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <item>
+                   <widget class="QLabel" name="label_10">
+                    <property name="text">
+                     <string>Border Width</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="layer_border_width"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_24">
+                  <item>
+                   <widget class="QLabel" name="label_24">
+                    <property name="text">
+                     <string>Spacing</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="layer_spacing"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_11">
+                  <item>
+                   <widget class="QLabel" name="label_11">
+                    <property name="text">
+                     <string>Border Color</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="layer_border_color">
+                    <property name="text">
+                     <string>Color Setting</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_13">
+                  <item>
+                   <widget class="QLabel" name="label_13">
+                    <property name="text">
+                     <string>Border Style</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="layer_border_style">
+                    <item>
+                     <property name="text">
+                      <string>SolidLine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>DashLine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>DotLine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>DashDotLine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>DashDotDotLine</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_14">
+                  <item>
+                   <widget class="QLabel" name="label_14">
+                    <property name="text">
+                     <string>Background Color</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="layer_background_color">
+                    <property name="text">
+                     <string>Color Setting</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_21">
+                  <item>
+                   <widget class="QLabel" name="label_21">
+                    <property name="text">
+                     <string>Background Style</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="layer_background_style">
+                    <item>
+                     <property name="text">
+                      <string>SolidPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense1Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense2Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense3Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense4Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense5Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense6Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense7Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>BoBrush</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>HorPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>VerPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>CrossPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>BDiagPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>FDiagPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>DiagCrossPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>LinearGradientPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>ConicalGradientPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>RadialGradientPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>TexturePattern</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="elements_group">
+               <property name="title">
+                <string>Elements</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_22">
+                  <item>
+                   <widget class="QLabel" name="label_22">
+                    <property name="text">
+                     <string>Elements</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="elements"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_18">
+                  <item>
+                   <widget class="QLabel" name="label_18">
+                    <property name="text">
+                     <string>Top Offset</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="elements_top"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_16">
+                  <item>
+                   <widget class="QLabel" name="label_16">
+                    <property name="text">
+                     <string>Bottom Offset</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="elements_bottom"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_17">
+                  <item>
+                   <widget class="QLabel" name="label_17">
+                    <property name="text">
+                     <string>Left Offset</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="elements_left"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_15">
+                  <item>
+                   <widget class="QLabel" name="label_15">
+                    <property name="text">
+                     <string>Right Offset</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="elements_right"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_27">
+                  <item>
+                   <widget class="QLabel" name="label_27">
+                    <property name="text">
+                     <string>Spacing</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="elements_spacing"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_19">
+                  <item>
+                   <widget class="QLabel" name="label_19">
+                    <property name="text">
+                     <string>Border Width</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="elements_border_width"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_20">
+                  <item>
+                   <widget class="QLabel" name="label_20">
+                    <property name="text">
+                     <string>Border Color</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="elements_border_color">
+                    <property name="text">
+                     <string>Color Setting</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_23">
+                  <item>
+                   <widget class="QLabel" name="label_23">
+                    <property name="text">
+                     <string>Border Style</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="elements_border_style">
+                    <item>
+                     <property name="text">
+                      <string>SolidLine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>DashLine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>DotLine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>DashDotLine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>DashDotDotLine</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_12">
+                  <item>
+                   <widget class="QLabel" name="label_12">
+                    <property name="text">
+                     <string>Background Color</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="elements_background_color">
+                    <property name="text">
+                     <string>Color Setting</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_25">
+                  <item>
+                   <widget class="QLabel" name="label_25">
+                    <property name="text">
+                     <string>Background Style</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="elements_background_style">
+                    <item>
+                     <property name="text">
+                      <string>SolidPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense1Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense2Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense3Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense4Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense5Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense6Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dense7Pattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>BoBrush</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>HorPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>VerPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>CrossPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>BDiagPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>FDiagPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>DiagCrossPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>LinearGradientPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>ConicalGradientPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>RadialGradientPattern</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>TexturePattern</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_26">
+                  <item>
+                   <widget class="QLabel" name="label_26">
+                    <property name="text">
+                     <string>Font</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFontComboBox" name="element_font"/>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="canvas" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>72</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="element_page">
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>291</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Elements</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>Element Top Offset</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBox_5"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>Element Bottom Offset</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBox_6"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>Element Left Offset</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBox_7"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>Element Eight Offset</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBox_8"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
